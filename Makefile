@@ -1,7 +1,7 @@
 #makefile to work with dockerfile
 
 #vars
-USERNAME = devdastl
+USERNAME = default
 PROJECT = emlop
 TAG = assignment4-v1
 
