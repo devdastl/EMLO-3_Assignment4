@@ -24,7 +24,10 @@ Prerequisite:
 
 Steps: 
 - Git clone this repo onto the host: `git clone https://github.com/devdastl/EMLO-3_Assignment4.git`
-- Build docker image, this repo uses Makefile to easily execute docker command. Run command `make build-image`. you can pass `USERNAME=a PROJECT=b TAG=c` with make command to build docker image of name `a/b:c`
+- Build docker image, this repo uses Makefile to easily execute docker command. Run command `make build-image`. you can pass `USERNAME=a PROJECT=b TAG=c` with make command to build docker image of name `a/b:c`.
+- You can also directly pull docker image from Dockerhub instead of building it.
+    - `docker pull devdastl/emlop:assignment4-v1`
+    - `make USERNAME=devdastl run-train`
 - Run `make help` to list available steps.
 <br>
 
