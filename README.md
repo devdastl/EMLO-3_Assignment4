@@ -32,10 +32,12 @@ There are three ways to exectue training and evaluation on Docker container and 
 
 ### Run training and evaluation using Makefile
 To directly run training and evaluation on built image you can run following make command:
-- To start training: `make run-train`
+- To start training on CIFAR: `make run-train`
+- To train on MNSIT: `make run-train COMMAND="data=mnist model=mnist"`
     - This will train and put model and log in `/outputs/date/time/lightning_logs` as well as a temp model in `/outputs`.
     - 
 - To start evaluation: `make run-eval`
+- Start eval on MNIST: `make run-eval COMMAND="data=mnist model=mnist"` 
 
 ### Run interactive using Makefile
 
